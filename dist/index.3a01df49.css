@@ -1,0 +1,216 @@
+@import "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap";
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Space Grotesk, sans-serif;
+  overflow: hidden;
+}
+
+.bg-main {
+  z-index: -3;
+  height: 100vh;
+  position: absolute;
+}
+
+.bg-main img {
+  width: 30vw;
+  height: 100vh;
+}
+
+main {
+  justify-content: center;
+  align-items: center;
+  gap: 10vw;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+main .cb-section {
+  color: #fff;
+  gap: 3em;
+  display: grid;
+  position: relative;
+}
+
+main .cb-section > div img {
+  border-radius: 10px;
+  box-shadow: 0 0 30px #0000001a;
+}
+
+main .cb-section .cb_front {
+  width: calc(447px - 4em);
+  height: calc(245px - 4em);
+  margin-right: 5em;
+  padding: 2em;
+  display: grid;
+  position: relative;
+}
+
+main .cb-section .cb_front img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main .cb-section .cb_front .cb_front_number {
+  letter-spacing: .1em;
+  align-self: flex-end;
+  font-size: 1.8em;
+}
+
+main .cb-section .cb_front .cb_front_infos {
+  justify-content: space-between;
+  align-self: flex-end;
+  display: flex;
+}
+
+main .cb-section .cb_front .cb_front_infos span {
+  text-transform: uppercase;
+  letter-spacing: .15em;
+  font-size: .9em;
+}
+
+main .cb-section .cb_back {
+  justify-content: right;
+  width: 447px;
+  height: 245px;
+  margin-left: 5em;
+  position: relative;
+}
+
+main .cb-section .cb_back img {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+main .cb-section .cb_back .cb_back_cvc {
+  letter-spacing: .15em;
+  position: absolute;
+  top: 45%;
+  right: 15%;
+}
+
+main .form-section {
+  justify-content: center;
+  display: flex;
+}
+
+main .form-section form {
+  gap: 2em;
+  width: 500px;
+  display: grid;
+}
+
+main .form-section form label {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-bottom: .5em;
+  font-size: .9em;
+}
+
+main .form-section form input[type="text"] {
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 1px solid #dedddf;
+  border-radius: 8px;
+  width: 100%;
+  padding: .7em;
+  font-family: Space Grotesk, sans-serif;
+  font-size: 18px;
+}
+
+main .form-section form input[type="text"]::placeholder {
+  color: #dedddf;
+}
+
+main .form-section form input[type="text"]:hover {
+  border-color: #8e8593;
+}
+
+main .form-section form input[type="text"]:focus {
+  outline-width: 1px;
+  outline-color: #600594;
+}
+
+main .form-section form input[type="button"] {
+  color: #fff;
+  cursor: pointer;
+  background-color: #21092f;
+  border: none;
+  border-radius: 8px;
+  margin-top: 1em;
+  padding: 1em;
+  font-family: inherit;
+  font-size: 16px;
+  transition: all .1s;
+}
+
+main .form-section form input[type="button"]:hover {
+  background-color: #471763;
+}
+
+main .form-section form > div {
+  display: grid;
+}
+
+main .form-section form .form_cb-more {
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  gap: 1em;
+}
+
+main .form-section form .form_cb-more > div {
+  display: grid;
+}
+
+main .form-section form .form_cb-more .cb-date_inputs {
+  gap: .5em;
+  display: flex;
+}
+
+@media screen and (width < 1200px) {
+  main {
+    gap: 3vw;
+  }
+}
+
+@media screen and (width < 1100px) {
+  .bg-main img {
+    width: 100vw;
+    height: 35vh;
+  }
+
+  main {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  main .cb-section {
+    transform: scale(.65);
+  }
+
+  main .cb-section .cb_back {
+    z-index: -2;
+    position: absolute;
+    top: -60%;
+  }
+}
+
+@media screen and (width < 525px) {
+  main .form-section form {
+    gap: 1.5em;
+    width: 90%;
+  }
+
+  main .form-section form label {
+    margin-bottom: 1em;
+    font-size: 3vw;
+  }
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */
